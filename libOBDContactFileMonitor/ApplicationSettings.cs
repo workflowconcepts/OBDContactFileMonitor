@@ -89,7 +89,9 @@ namespace com.workflowconcepts.applications.filemonitor
         }
         public string SqlCommand
         {
-            get;set;
+            get;
+
+            set;
         }
         public string SqlServerHostIp
         {
@@ -411,6 +413,11 @@ namespace com.workflowconcepts.applications.filemonitor
                     if (settings.database.sqlcommand != null)
                     {
                         SqlCommand = encDec.Decrypt(((Newtonsoft.Json.Linq.JToken)settings.database).Value<string>("sqlcommand"));
+
+                        if(string.IsNullOrEmpty(SqlCommand))
+                        {
+                            SqlCommand = ApplicationConstants.DATABASE_DEFAULT_COMMAND;
+                        }
                     }
                 }
         //rjm 1/25/2022 END

@@ -24,6 +24,8 @@ namespace com.workflowconcepts.applications.filemonitor
         public const int IPC_PORT = 8500;
         public const string IPC_URI = "ServicesManagment";
 
+        public const string DATABASE_DEFAULT_COMMAND = "spAddRecord";
+
         public const int LOG_ARCHIVING_NUMBER_OF_LOG_FILES_PER_ARCHIVE = 100;
         public const int LOG_ARCHIVING_MAX_DISK_PERCENTAGE = 20;
         public const int LOG_ARCHIVING_MAXIMUM_AGE_IN_DAYS_IF_DISK_SPACE_NEEDED = 15;
