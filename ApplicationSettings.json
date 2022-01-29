@@ -1,0 +1,40 @@
+﻿{
+  "file":{
+	  "inputfiledirectory":"C:\\Users\\BobWfc\\Dropbox (WFC)\\Bob\\Visual Studio 2019\\Template\\OBDContactFileMonitor\\bin\\DEBUG_LOCALHOST\\TestFolder",
+	  "savetoarchivefolder": true,
+	  "archivedfiledirectory":"C:\\Users\\BobWfc\\Dropbox (WFC)\\Bob\\Visual Studio 2019\\Template\\OBDContactFileMonitor\\bin\\DEBUG_LOCALHOST\\TestFolder\\Archive"
+  },
+  "database":{
+	  "sqlserverhostip":"10.1.10.41",
+	  "sqlinstancename":"SQL2019SANDBOX",
+	  "sqldatabasename":"OutboundDialerContacts",
+	  "sqlusername":"sa",
+	  "sqlpassword":"Workflow1",
+	  "sqlcommand":"spAddRecord"
+  },
+  "remoting": {
+    "port": 8500,
+    "prefix": "ServicesManagment"
+  },
+  "email": {
+    "from": "ZJSxTQyDRoOFHBXfPNosAvfc3KSsPED0haMu/aoJvF4=",
+    "to": "SedQqHOVCbDKvTJEGM36cV3qZWWEVDiRVbtBwft9EhQ=",
+    "server": "OIr2/Xh8jIsEAmSpP/7x1QBAp/ahhpoNvKbUP4xfW6M=",
+    "port": "1BbuxsA/vBQbMfnUYapO2A==",
+    "user": "ZJSxTQyDRoOFHBXfPNosAvfc3KSsPED0haMu/aoJvF4=",
+    "password": "sy63bpmh9/S1CO+0me2FVw==",
+    "emailonsuccess": true,
+    "emailonfailure": true,
+    "enablessl": true
+  },
+  "debug": {
+    "enabled": true,
+    "level": "Trace",
+    "retainvalue": 100,
+    "filezise": "OneMegaByte",
+    "logarchivingenabled": true,
+    "logfilesperarchive": 250,
+    "maxpercentageofdisk": 20,
+    "maxarchiveageindaysifdiskspaceneeded": 30
+  }
+}
