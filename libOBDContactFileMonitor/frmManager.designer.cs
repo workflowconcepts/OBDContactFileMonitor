@@ -56,6 +56,8 @@
             this.mnuMainAboutCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.tabSettings = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.ucFolderMonitor = new com.workflowconcepts.applications.filemonitor.ucFolderMonitor();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.ucRemotingInformation = new com.workflowconcepts.applications.filemonitor.ucRemotingInformation();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -72,10 +74,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ucDebugSettings = new com.workflowconcepts.applications.filemonitor.ucDebugSettings();
             this.pbCompanyLogo = new System.Windows.Forms.PictureBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.ucFolderMonitor = new com.workflowconcepts.applications.filemonitor.ucFolderMonitor();
             this.mnuMain.SuspendLayout();
             this.tabSettings.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -84,7 +85,6 @@
             this.groupBox5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCompanyLogo)).BeginInit();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -152,6 +152,23 @@
             this.tabSettings.Text = "Settings";
             this.tabSettings.UseVisualStyleBackColor = true;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.ucFolderMonitor);
+            this.groupBox6.Location = new System.Drawing.Point(426, 177);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(410, 113);
+            this.groupBox6.TabIndex = 14;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Folder Monitor";
+            // 
+            // ucFolderMonitor
+            // 
+            this.ucFolderMonitor.Location = new System.Drawing.Point(6, 19);
+            this.ucFolderMonitor.Name = "ucFolderMonitor";
+            this.ucFolderMonitor.Size = new System.Drawing.Size(390, 92);
+            this.ucFolderMonitor.TabIndex = 0;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.ucRemotingInformation);
@@ -177,7 +194,7 @@
             this.groupBox3.Size = new System.Drawing.Size(410, 165);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Database Connetion Information";
+            this.groupBox3.Text = "Database Connection Information";
             // 
             // ucDatabaseConnectionInformation
             // 
@@ -305,23 +322,6 @@
             this.pbCompanyLogo.TabIndex = 3;
             this.pbCompanyLogo.TabStop = false;
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.ucFolderMonitor);
-            this.groupBox6.Location = new System.Drawing.Point(426, 177);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(410, 113);
-            this.groupBox6.TabIndex = 14;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Folder Monitor";
-            // 
-            // ucFolderMonitor
-            // 
-            this.ucFolderMonitor.Location = new System.Drawing.Point(6, 19);
-            this.ucFolderMonitor.Name = "ucFolderMonitor";
-            this.ucFolderMonitor.Size = new System.Drawing.Size(390, 92);
-            this.ucFolderMonitor.TabIndex = 0;
-            // 
             // frmManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,6 +342,7 @@
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.tabSettings.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -350,7 +351,6 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbCompanyLogo)).EndInit();
-            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
