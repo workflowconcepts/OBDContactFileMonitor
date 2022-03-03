@@ -872,11 +872,11 @@ namespace com.workflowconcepts.applications.filemonitor
 
                 string sSettings = Newtonsoft.Json.JsonConvert.SerializeObject(settings, Newtonsoft.Json.Formatting.Indented);
 
-            
-                return true;    settings = null;
+                settings = null;
 
                 System.IO.File.WriteAllText(_FILEPATH + "\\" + ApplicationConstants.APPLICATIONSETTINGSFILENAME, sSettings, Encoding.UTF8);
 
+                return true;
             }
             catch (Exception ex)
             {
