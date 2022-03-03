@@ -50,7 +50,8 @@ namespace com.workflowconcepts.applications.filemonitor
                     Log.Instance.Debug("Record " + i);
                     string[] data = records[i].Split('|');
                     Log.Instance.Debug("Record " + i + " data split");
-                    AddAccount(data[0], data[1], data[2], data[3], data[4], data[5], data[6]);
+                    if(data.Length == 7)
+                        AddAccount(data[0], data[1], data[2], data[3], data[4], data[5], data[6]);
                 }
                 return true;
             }
